@@ -1322,7 +1322,7 @@ abstract class BaseFacebook
    *                      by a failed API call.
    */
   protected function throwAPIException($result) {
-    $e = new FacebookApiException($result);
+    $e = new FacebookApiException($result); //erorr
     switch ($e->getType()) {
       // OAuth 2.0 Draft 00 style
       case 'OAuthException':
